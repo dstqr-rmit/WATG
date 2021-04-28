@@ -26,6 +26,11 @@ body {
 	background-color:#002b36;
 }
 
+h1{
+  color:#eee8d5;
+  font-size: 48px;
+}
+
 button{
   background-color: #eee8d5;
   border: none;

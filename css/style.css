@@ -49,6 +49,7 @@ button:hover{
 }
 
 .box-white {
+	align:center;
 	background-color: white;
 	color: black;
 	text-align: center;

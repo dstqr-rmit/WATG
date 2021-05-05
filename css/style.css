@@ -64,6 +64,20 @@ button:hover{
   background-color: #ddd7c4;
 }
 
+a:link{
+	color:#2aa198;
+}
+a:visited{
+	color:#21827as;
+}
+a:hover{
+	Color:#657b83;
+}
+a:active{
+	color:#839496;
+}
+
+
 .box-white {
 	padding: 1% 1% 1% 1%;
 	margin:auto;

@@ -34,17 +34,17 @@ body {
 h1{
   color:#eee8d5;
   font-size: 48px;
-	font-family:"Times New Roman";
+	font-family:"Georgia";
 }
 
 h2{
 	text-decoration: underline;
   font-size: 34px;
-	font-family:"Times New Roman";
+	font-family:"Georgia";
 }
 h3{
 	font-size: 24px;
-	font-family:"Times New Roman";
+	font-family:"Georgia";
 }
 
 button{
@@ -104,6 +104,11 @@ button:hover{
 	height: 160px;
 }
 
+.DylpfPic{
+	border:4px solid #839496;
+	width: 120px;
+	height: 160px;
+}
 
 .image1 {
 	border:4px solid #839496;

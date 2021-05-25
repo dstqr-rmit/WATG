@@ -24,6 +24,7 @@ Green #859900
 
 *{
 	font-size: 20px;
+	font-family:Arial;
 }
 body {
 	margin:2% 8% 0% 8%;
@@ -33,13 +34,17 @@ body {
 h1{
   color:#eee8d5;
   font-size: 48px;
+	font-family:"Georgia";
 }
 
 h2{
+	text-decoration: underline;
   font-size: 34px;
+	font-family:"Georgia";
 }
 h3{
 	font-size: 24px;
+	font-family:"Georgia";
 }
 
 button{
@@ -59,16 +64,64 @@ button:hover{
   background-color: #ddd7c4;
 }
 
+a:link{
+	color:#2aa198;
+}
+a:visited{
+	color:#21827as;
+}
+a:hover{
+	Color:#657b83;
+}
+a:active{
+	color:#839496;
+}
+
+
 .box-white {
+	padding: 1% 1% 1% 1%;
+	margin:auto;
+	align:center;
+	background-color: #839496;
+	color: #073642;
+	text-align: center;
+	width: 80%;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box-2 {
 	padding: 1% 4% 1% 4%;
 	margin:auto;
 	align:center;
 	background-color: #fef9ec;
 	color: #073642;
 	text-align: center;
-	width: 80%;
-	border-radius: 25px;
+	width: 92%;
+	border-radius: 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box-3 {
+	padding: 1% 4% 1% 4%;
+	margin:auto;
+	align:center;
+	background-color: #fdf6e3;
+	color: #073642;
+	text-align: center;
+	width: 92%;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pfPic{
+	border:4px solid #839496;
+	width: 160px;
+	height: 160px;
+}
+
+.DylpfPic{
+	border:4px solid #839496;
+	width: 120px;
+	height: 160px;
 }
 
 .image1 {
@@ -113,4 +166,11 @@ button:hover{
 	display:block;
 	max-height: 150%;
 	max-width: 150%;
+}
+
+.borderforimages {
+	border:4px solid #839496;
+	border-radius: 18px;
+	position: relative;
+	display:block;
 }

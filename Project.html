@@ -1,14 +1,18 @@
+<DOCTYPE HTML>
 <HTML>
-
 
   <head>
     <title>Project - WaTG</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   </head>
 
-
-
   <body>
+
+    <div align="center">
+      <h1>Our Project</h1>
+    </div>
 
     <div align="center">
       <a href="index.html"><button>Home</button></a>
@@ -19,6 +23,177 @@
       <a href="ITTechnologies.html"><button>IT Technologies</button></a>
       <a href="Project.html"><button>Project</button></a>
       <a href="GroupReflection.html"><button>Group Reflection</button></a>
+    </div>
+    <br />
+
+    <div class="box-white">
+      <div class="box-2">
+        <p>
+          <h2>Outline</h2>
+          Our project is an application for mobile platforms that will allow the
+          user to track their medication intake and mood over time. This data can
+          then be compared to gain an understanding of how medication can affect mood.
+          This application will leverage libraries such as React – to build the core
+          application and to potentially deploy to the internet as a browser based
+          application – and React Native – to run the application on devices and
+          leverage platform specific features. In broad strokes, the application
+          will allow the user to input when they take their medication – and receive
+          reminders to do so – as well as allow the user to input their mood on a
+          schedule they define (eg. Daily, every other day, certain days, once a week),
+          then to compare the medication and mood data. If the user would like, they
+          may use the app as simply a medication reminder or mood tracking app, though
+          this use case won’t be the focus of the app the user would be able to disable
+          specific features such as mood/medication reminders. The user can input their
+          mood as a number on a scale of user-defined length such as the one found in
+          the app Moodistory (See image 1 bellow) as well as providing a short summary
+          of what may have affected their mood (Had a good day, had a rough day at work,
+          relationship troubles, etc.).
+        </p>
+      </div>
+      <br />
+      <div class="box-3">
+        <p>
+          <h2>Motivation</h2>
+          People who take medication, especially mind-altering ones such as anti-depressants
+          (Prozac, Zoloft, etc.) and ADHD medications (Ritalin, Vyvanse, etc.), are often
+          asked how those drugs affect their mood. This can be hard for patients to
+          keep track of how their mood changed between appointments, which once a
+          routine is established can be as far apart as every 6 months. This can be,
+          and is, relieved by using mood tracking apps and services such as the aforementioned
+          Moodistory as well as others like MoodTracker, Moodnotes, and Daylio Journal,
+          but these services provide no way for the patient to easily determine how their
+          medication specifically may be affecting their mood, which can be somewhat difficult
+          to determine if they take their medication on an odd schedule, such as twice a week,
+          every five days or even something like one pill on one day and two the next. An app
+          that tracked both mood and medication intake and allowing the user to compare the
+          two would enable patients to better describe their mood changes to their doctor,
+          allowing them to better treat their patients and provide their patients with more
+          specific, medically informed care.
+        </p>
+      </div>
+      <br />
+      <div class="box-2">
+        <p>
+          <h2>Description</h2>
+          Our app will initially run on both major mobile platforms, Android and iOS/iPadOS,
+          later adapting those versions to desktop operating systems via React Native for
+          Windows + macOS. We could turn the app into a generic web application using the
+          React base we would have already developed for the mobile version.
+          <br /><br />
+          Users can enter information regarding what medications they take, the frequency/time
+          of doses (Once daily, twice daily, every other day, etc.) and dosage taken (1 pill,
+          2 pills, 1 patch, 1.5ml injection, etc.) along with how often they’d like to be asked
+          about their mood. With this information the user can be notified of when they should
+          take their medication and to input their current mood, on mobile this will leverage
+          the mobile platforms robust, refine notification system. Similar notifications are
+          available for desktop operating systems but will require the application to remain
+          open in the background of the user’s computer, potentially leaving a heavy impact
+          on their battery life. The app will need to track the time between doses rather
+          than time on the clock for each dose so as to avoid being affected by changing time
+          zones.
+          <br /><br />
+          With the data collected, the app will compile it into a visualisation for the user
+          and potentially their doctor to view and to more readably view how medication intake
+          and their mood are correlated. When the user views the visualisation, they will be
+          presented with a graph like the one found bellow in image 2. From this visualisation
+          they could learn that their mood seemed to be positivly affected by the initial dose
+          on 1/1/2021, but after the second dose on 4/1/2021 their mood steadily declined. The
+          user could take this data to their doctor who could possibly use it to adjust their
+          dose or change their medication.
+          <br /><br />
+          The user will always have control over their data, meaning they will be able to edit
+          their inputs after the fact and will be able to export their data to be backed up to
+          their personal storage solution and to be later imported back into the app, potentially
+          on a new device or reset system. The app may be able to back up their data to Google or
+          Apple’s cloud backup solution, but this would not allow for the user to easily change
+          platforms.
+          <br /><br />
+          This data may be considered medical information. This means we will need to ensure the
+          data cannot be linked to the user in any way and make sure the user agrees to some sort
+          of consent form. This information was obtained from the Royal Australian College of
+          General Practitioners and was originally written to advise general practitioners on the
+          storage of patient data, though we believe following these protocols should be acceptable
+          for our usage.
+          <i>Reference: Royal Australian College of General Practitioners (RACGP), ”Privacy and
+            managing health information in general practice”,
+            <a href="https://www.racgp.org.au/getattachment/f15c7f47-9abb-48e7-9d31-082e7dd517fe/Privacy-and-managing-health-information-in-general-practice.aspx">
+              https://www.racgp.org.au/getattachment/f15c7f47-9abb-48e7-9d31-082e7dd517fe/Privacy-and-managing-health-information-in-general-practice.aspx</a>,
+              accessed 3:45PM 27/04/2021.
+          </i>
+        </p>
+      </div>
+      <br />
+      <div class="box-3">
+        <p>
+          <h2> Tools and Technologies</h2>
+          This app will leverage the web technologies React and React Native. React is a framework
+          build on top of the Javascript programing language designed to enable the fast building
+          of interactive, responsive user interfaces for the web. We will then use React Native to
+          turn this web app into a native mobile app for iOS/iPadOS and Android. If we later wanted
+          to support Windows and macOS we would use the React Native fork “React Native for Windows
+          + macOS” (<a href="https://microsoft.github.io/react-native-windows/">https://microsoft.github.io/react-native-windows/</a>),
+          though it would be worth considering if desktop platforms are better served by a web application.
+<br /><br />
+Our group would need to use a programing centric text editor such as Atom, Visual Studio Code or
+Notepad++ to develop the core JavaScript code of the application. Each group member would be able
+to use the editor that suited them best. For collaboration our group would take advantage of the
+robust group-work systems provided by GitHub which allows us to work on the same files at the same
+time, handling merging our changes into a single file and allowing us to keep track of individual
+contributions.
+<br /><br />
+Any computer running Windows, macOS or Linux can build the app for Android using Google's Android
+Studio software (<a href="https://developer.android.com/studio">https://developer.android.com/studio</a>),
+however, a computer running Apple’s macOS is required to build the iOS/iPadOS version of the app.
+This can take the form of an official Apple Macbook/iMac/Mac Pro or a generic computer running
+modified software allowing it to run macOS, otherwise known as a 'Hackintosh' (A portmanteau of
+‘Hack’ and ‘Macintosh’) but such computers have a reputation for being unstable and are in
+violation of Apple’s terms of service, making them unsuitable for a professional project. RMIT
+makes iMacs available for student use which we could use for our build process.
+<br /><br />
+To publish on each platform’s official distribution platform (Apple’s App Store and Google’s Play Store)
+requires us to have a developer account with each platform. Apple’s Developer Program costs the most to
+join, at $99 USD per year of membership, while Google’s developer account status only attracts a
+one-time fee of $25 USD. There are alternative ways for apps to be distributed, however. For Android,
+we could distribute the .apk file on our website, which users could install manually (Otherwise known
+as ‘Sideloading’). A similar solution could be used with iOS/iPadOS, but this requires significantly
+more effort on the part of the user. AltStore
+(<a href="https://www.altstore.io">https://www.altstore.io</a>)
+is a service for Windows and
+macOS that allows user to sideload .ipa files onto their iPhone or iPad but requires the device to
+touch base with the server running on the computer to re-enable the app every 7 days. We could upload
+a .ipa file of the app to our website, but the hassle of using it likely makes it not worth considering.
+For Windows and macOS we can publish the .exe/.dmg files on our website for users to install.
+        </p>
+      </div>
+      <br />
+      <div class="box-2">
+        <p>
+          <h2>Skills</h2>
+          Our team would primarily need to develop skills in web development, specifically JavaScript.
+          We will also need to learn the specifics of working with the React and React Native platforms.
+          Facebook, who created both React and React Native, publishes detailed documentation on the
+          use of their platforms
+          (<a href="https://reactjs.org/docs/getting-started.html">https://reactjs.org/docs/getting-started.html</a>,
+          <a href="https://reactnative.dev/docs/getting-started">https://reactnative.dev/docs/getting-started</a>)
+          alongside more simplified tutorials
+          (<a href="https://reactjs.org/tutorial/tutorial.html">https://reactjs.org/tutorial/tutorial.html</a>,
+          <a href="https://reactnative.dev/docs/tutorial">https://reactnative.dev/docs/tutorial</a>).
+          <br /><br />
+          To learn JavaScript there are many online resources such as Codecademy
+          (<a href="https://www.codecademy.com/learn/introduction-to-javascript">https://www.codecademy.com/learn/introduction-to-javascript</a>),
+          W3Schools (<a href="https://www.w3schools.com/js/DEFAULT.asp">https://www.w3schools.com/js/DEFAULT.asp</a>) and the
+          Mozilla Developer Network (<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">https://developer.mozilla.org/en-US/docs/Learn/JavaScript</a>).
+          Detailed documentation is available from many sources including the aforementioned Mozilla Developer Network.
+        </p>
+      </div>
+      <br />
+      <div class="box-3">
+        <p>
+          <h2>Outcome</h2>
+          When finished and made available to the public. Our group hopes our app will be used
+          by people to advocate for better medical outcomes by providing their doctors with more
+          in depth information about their mood and how it relates to their medication intake.
+      </div>
     </div>
 
   </body>
